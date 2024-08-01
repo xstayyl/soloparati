@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.gif') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente si se desea */
+    height: 100vh; /* Asegurarse de que el cuerpo ocupe toda la altura de la ventana */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Ajustar para mover el contenedor más arriba */
+}
+
+.gif-left, .gif-right {
+    width: 100px; /* Ajusta el tamaño de los GIFs según sea necesario */
+    height: auto;
+}
+
+.main {
+    padding: 2em;
+    width: 100%;
+    margin-top: 20px; /* Ajustar para mover el contenido principal más abajo */
+}
+
+h2 {
+    color: #4682b4; /* Color de texto sin borde azul */
+    border: none; /* Elimina cualquier borde */
+    background: none; /* Elimina el fondo */
+    margin: 0; /* Elimina el margen si es necesario */
+    padding: 0; /* Elimina el relleno si es necesario */
+}
+
+.marco {
+    border: 2px solid #ffb6c1; /* Color de borde rosa pastel suave */
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #ff69b4; /* Color de texto rosa fuerte */
+    background-color: rgba(255, 228, 225, 0.8); /* Color de fondo rosa pastel suave con opacidad */
+    margin: 10px 20px; /* Ajustar el margen para mover el marco más arriba */
+    width: fit-content; /* Ajustar el ancho al contenido */
+    max-width: 80%; /* Limitar el ancho máximo */
+    font-family: 'Proza Libre', sans-serif; /* Aplicar la fuente Proza Libre */
+}
+
+.separator {
+    border: 2px solid #ffb6c1; /* Color de borde rosa pastel suave */
+    background-color: rgba(255, 228, 225, 0.8); /* Color de fondo rosa pastel suave con opacidad */
+    margin: 10px auto; /* Ajustar el margen para mover el separador más arriba */
+    width: 90%; /* Ancho más largo sin tocar los lados */
+    height: 1em; /* Hacer el separador más delgado verticalmente */
+    max-width: 90%; /* Limitar el ancho máximo */
+}
+
+.footer-text {
+    width: 90%; /* Ancho más largo sin tocar los lados */
+    max-width: 800px; /* Establecer un ancho máximo para evitar que el texto sea demasiado largo */
+    margin: 10px auto; /* Centrar horizontalmente */
+    padding: 10px; /* Espaciado interno para que el texto no toque los bordes */
+    font-family: 'Indie Flower', cursive; /* Aplicar la fuente Indie Flower */
+    text-align: justify; /* Justificar el texto */
+    overflow: auto; /* Mostrar barras de desplazamiento si el contenido es demasiado largo */
+    box-sizing: border-box; /* Asegurarse de que el padding y border se incluyan en el ancho y alto */
+}
+
+/* Botones tipo Omori */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 10px; /* Espaciado entre los botones */
+    margin: 20px 0; /* Espaciado arriba y abajo de los botones */
+}
+
+.button-image {
+    width: 60px; /* Ajustar el tamaño de las imágenes según sea necesario */
+    height: auto;
+}
+
+.button-image-right{
+    width: 30px;
+    height: 30px;
+}
+
+.button-image-left {
+    margin-right: 10px; /* Espacio entre la imagen de la izquierda y los botones */
+}
+
+.button-image-right {
+    margin-left: 10px; /* Espacio entre la imagen de la derecha y los botones */
+}
+
+
+.omori-button {
+    background-color: #ffb6c1; /* Color de fondo rosa pastel suave */
+    color: #ffffff; /* Color del texto blanco */
+    border: 2px solid #ff69b4; /* Borde rosa fuerte */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-family: 'Proza Libre', sans-serif; /* Fuente de los botones */
+    font-size: 1em; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, color 0.3s; /* Transición para efectos de hover */
+}
+
+.omori-button:hover {
+    background-color: #ff69b4; /* Color de fondo rosa fuerte al pasar el ratón */
+    color: #ffffff; /* Color del texto blanco al pasar el ratón */
+}
+
+.end-text {
+    width: 90%; /* Ancho más largo sin tocar los lados */
+    max-width: 800px; /* Establecer un ancho máximo para evitar que el texto sea demasiado largo */
+    margin: 20px auto; /* Centrar horizontalmente y agregar margen superior e inferior */
+    padding: 10px; /* Espaciado interno para que el texto no toque los bordes */
+    font-family: 'Indie Flower', cursive; /* Aplicar la fuente Indie Flower */
+    text-align: center; /* Centrar el texto */
+}
+.image-mural {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.image-mural img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}/* Estilo para el botón de regreso */
+.back-button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Color de fondo rosa fuerte */
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #ff1493; /* Color de fondo rosa más oscuro al pasar el ratón */
+}
+/* Estilo para el texto */
+.simple-text {
+    font-size: 2em;
+    margin: 0;
+    padding: 20px;
+}
+body {
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+    padding: 0;
+    background: url('background.gif') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
